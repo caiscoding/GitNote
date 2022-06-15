@@ -665,6 +665,14 @@ Merge made by the 'ort' strategy.
 
 这样就说明合并完成了，我们可以查看 `README.md` 文件，会发现在 `branch-a` 修改的内容在 `master` 分支也修改了。
 
+## 删除分支
+
+使用以下命令可以删除特定分支：
+
+```sh
+$ git branch -D <branch name>
+```
+
 ## 以图表形式查看分支
 
 可以执行以下命令以图表的形式查看分支：
