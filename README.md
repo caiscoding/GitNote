@@ -27,7 +27,7 @@ $ git config --global user.email "Your GitHub Email"
 ### 设置密码
 
 ```sh
-$ git config --global user.password "Your GitHub User SSH Key"
+$ git config --global user.password "Your GitHub Personal Access Token"
 ```
 
 ### 设置 http 代理
@@ -69,6 +69,24 @@ $ git config --global color.ui auto
 ```
 
 最后配置将保存在 `~/.gitconfig` 文件中。
+
+## GitHub 下载加速的方法
+
+**使用 GitHub cnpmjs 镜像**
+
+当你要 `clone` 一个 repository ，然后特别嫌弃他的速度的时候，可以将本来的
+
+```sh
+git clone https://github.com/xxx.git
+```
+
+改成：
+
+```sh
+git clone https://github.com.cnpmjs.org/xxx.git
+```
+
+这样通过代理可以比较轻松地加速。
 
 ## GitHub 创建仓库
 
